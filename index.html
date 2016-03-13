@@ -5,6 +5,7 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
         <link rel="stylesheet" href="css/themes/flato.css" />
           <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
@@ -21,16 +22,7 @@
     h2 {
         color: #459aFF
     }
-/*        <form class="ui-filterable">
-                <input id="rich-autocomplete-input" data-type="search" placeholder="Search Top 5 Hackers over world...">
-               <ul data-role="listview" data-filter="true" data-inset="true" data-input="#rich-autocomplete-input">
-                       <li data-filtertext="NASDAQ:jonath Jonathan James"><a href="#">Jonathan James</a></li>
-                       <li data-filtertext="NASDAQ:kev Kevin Mitnick"><a href="#">Kevin Mitnick</a></li>
-                       <li data-filtertext="NASDAQ:albe Albert Gonzalez"><a href="#">Albert Gonzalez</a></li>
-                       <li data-filtertext="NASDAQ:kevin Kevin Poulsen"><a href="#">Kevin Poulsen</a></li>
-                       <li data-filtertext="NYSE:gar Gary McKinnon"><a href="#">Gary McKinnon</a></li>
-               </ul>
-       </form>*/
+   
 </style>
 
 </head>
@@ -38,15 +30,28 @@
     <body>
         <section id="Home" data-role="page" data-theme="c">
             <div data-role="header">
-                <h3> Identity Theft </h3>
+                <h3 style="color: #FFa922">Identity Theft</h3>
             </div>
             
             <div class="ui-content">
                 <ul data-role="listview">
-                    <li><a href="#computerprivacy">Computer privacy </a> </li>
-                    <li><a href="#Issue">Secruity issue</a></li>
-                    <li><a href="#ethical">Ethical</a></li>
+                    <li><a href="#computerprivacy"  data-transition="flip">Computer privacy </a> </li>
+                    <li><a href="#Issue" data-transition="flip">Secruity issue</a></li>
+                    <li><a href="#ethical" data-transition="flip">Ethical</a></li>
+                    <li><a href="#hackerslist" data-transition="flip">List of Hackers</a></li>
                 </ul>
+                <br>
+                <br>
+                <center>
+                    <img src="ALERT..png" style="width: 23%">
+                </center>
+                <p style="margin: 32px; color: #ffffff">
+                    <b style="color: #ff0000">Note : </b>
+                    This website is still in beta_ Bugs testing..
+                    if there's some button or anything not working ..
+                    <b style="color: #000">SO PLEASE </b>
+                    understand
+                </p>
             </div>
             
            <div data-role='footer'>
@@ -58,10 +63,11 @@
             <div data-role="header">
                 <div data-role='navbar'>
                     <ul>
-                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home'>Home</a></li>
-                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user ui-btn-active ui-state-persist'>privacy</a></li>
-                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear'>issue</a></li>
-                        <li><a href='#ethical' class='ui-btn ui-btn-icon-top ui-icon-cloud'>Ethical</a></li>
+                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home'  data-transition="slide">Home</a></li>
+                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user ui-btn-active ui-state-persist'  data-transition="slide">privacy</a></li>
+                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear'  data-transition="slide">issue</a></li>
+                        <li><a href='#ethical' class='ui-btn ui-btn-icon-top ui-icon-cloud'  data-transition="slide">Ethical</a></li>
+                         <li><a href='#hackerlist' class='ui-btn ui-btn-icon-top ui-icon-cloud'  data-transition="slide">Hackers</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,14 +101,16 @@
                 <br>
             </div>
    </section>
-        <section id="Issue" data-role="page">
+  <section id="Issue" data-role="page">
           <div data-role="header">
                 <div data-role='navbar'>
                     <ul>
-                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home'>Home</a></li>
-                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user'>privacy</a></li>
-                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear ui-btn-active ui-state-persist'>issue</a></li>
-                        <li><a href='#lagcy' class='ui-btn ui-btn-icon-top ui-icon-cloud'>Ethical</a></li>
+                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home' data-transition="slide">Home</a></li>
+                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user' data-transition="slide">privacy</a></li>
+                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear ui-btn-active ui-state-persist' data-transition="slide">issue</a></li>
+                        <li><a href='#ethical' class='ui-btn ui-btn-icon-top ui-icon-cloud' data-transition="slide">Ethical</a></li>
+                        <li><a href='#hackerlist' class='ui-btn ui-btn-icon-top ui-icon-cloud'  data-transition="slide">Hackers</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -153,23 +161,105 @@
                         </p>
          </div>
                   <a href="#" onclick="$.mobile.silentScroll(0)" data-role="button" style="width: 15%; float:  right"> ^Top </a> <!-- back to the top button-->
-        </section>
-        <section id="ethical" data-role="page">
+ </section>
+        
+        
+ <section id="ethical" data-role="page">
             <div data-role="header">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home'>Home</a></li>
-                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user'>privacy</a></li>
-                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear '>issue</a></li>
-                        <li><a href='#lagcy' class='ui-btn ui-btn-icon-top ui-icon-cloud ui-btn-active ui-state-persist'>Ethical</a></li>
+                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home' data-transition="slide">Home</a></li>
+                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user' data-transition="slide">privacy</a></li>
+                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear ' data-transition="slide">issue</a></li>
+                        <li><a href='#ethical' class='ui-btn ui-btn-icon-top ui-icon-cloud ui-btn-active ui-state-persist' data-transition="slide">Ethical</a></li>
+                        <li><a href='#hackerslist' class='ui-btn ui-btn-icon-top ui-icon-cloud '  data-transition="slide">Hackers</a></li>
+
                     </ul>
                 </div>
             </div>
-            
-            
-            
-            
+            <div class="ui-content">
+                <h2>
+                    What does it mean to be  when using a computer?
+                </h2>
+                <br>
+                <hr>
+                <br>
+                <p style="color:  #f7931e">                    
+                    &nbsp; &nbsp;&nbsp; &nbsp; Being ethical when using a computer means to promote your own safety on the computer by avoiding risks such as viruses, hacking, and privacy invasion. You do these things by being careful on what sites you visit and what you post and do on the computer and websites you are on especially social media since you are prone to being hacked and privacy being invaded. Safety measures such as anti-viruses can prevent your computer from being tracked or hacked from another location, therefore promoting your safety on the computer. Also, taking precaution is not enough as you may too be violating these rules of using the computer, therefore you should be responsible of other people’s privacy and not abuse the computer for such things.
+                </p>
+            </div>
+ </section>
+       
+ <section id="hackerslist" data-role="page">
+     <div data-role="header">
+             <div data-role='navbar'>
+                    <ul>
+                        <li><a href='#Home' class='ui-btn ui-btn-icon-top ui-icon-home' data-transition="slide">Home</a></li>
+                        <li><a href='#computerprivacy' class='ui-btn ui-btn-icon-top ui-icon-user' data-transition="slide">privacy</a></li>
+                        <li><a href='#Issue' class='ui-btn ui-btn-icon-top ui-icon-gear ' data-transition="slide">issue</a></li>
+                        <li><a href='#ethical' class='ui-btn ui-btn-icon-top ui-icon-cloud' data-transition="slide">Ethical</a></li>
+                        <li><a href='#hackerlist' class='ui-btn ui-btn-icon-top ui-icon-sun ui-btn-active ui-state-persist' data-transition="slide">Hackers</a></li>
+                    </ul>
+            </div>
+     </div> 
+        <form class="ui-filterable">
+                <input id="rich-autocomplete-input" data-type="search" placeholder="Search Top 12 Hackers over world...">
+               <ul data-role="listview" data-filter="true" data-inset="true" data-input="#rich-autocomplete-input">
+                       <li data-filtertext="NASDAQ:jonath Jonathan James"><a href="#hacker1">Jonathan James</a></li>
+                       <li data-filtertext="NASDAQ:kev Kevin Mitnick"><a href="#">Kevin Mitnick</a></li>
+                       <li data-filtertext="NASDAQ:albe Albert Gonzalez"><a href="#">Albert Gonzalez</a></li>
+                       <li data-filtertext="NASDAQ:kevin Kevin Poulsen"><a href="#">Kevin Poulsen</a></li>
+                       <li data-filtertext="NYSE:gar Gary McKinnon"><a href="#">Gary McKinnon</a></li>
+               </ul>
+       </form>
+ </section>
+        <section id="hacker1" data-role="page">
+            <div class='ui-content'>
+                <!-- display the back button-->
+                <a href="#hackerslist" style="width: 15%" class='ui-btn ui-btn-icon-top ui-icon-back' data-transition="slide">Back</a>
+                <!-- display the text and image-->
+                <p>
+                    A dropout of Downey High School in California, Jeanson James Ancheta became a hacker in 2004 after he started to work with software robots called “botnets.” His hacking practice began when he discovered rxbot, a computer worm that has the capacity to infect and destroy computer networks. He became the first person to have ever been charged for controlling a huge number of hijacked computers in the United States.
+                </p>
+                <center>
+                    <a href="#myPopup" data-rel="popup" data-position-to="window"><img src="Slide1109.jpg" style="width: 66%"></a>
+                </center>
+                <div data-role="popup" id="myPopup">
+                      <a href="#myPopup" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="Slide1109.jpg" style="width:333px;height:222px;">
+                </div>
+            </div>
         </section>
+         <section id="hacker2" data-role="page">
+             
+        </section>
+         <section id="hacker3" data-role="page">
+             
+        </section>
+         <section id="hacker4" data-role="page">
+             
+        </section>
+         <section id="hacker5" data-role="page">
+             
+        </section>
+         <section id="hacker6" data-role="page">
+             
+        </section>
+         <section id="hacker7" data-role="page">
+             
+        </section>
+         <section id="hacker8" data-role="page">
+             
+        </section>
+         <section id="hacker9" data-role="page">
+             
+        </section>
+         <section id="hacker11" data-role="page">
+             
+        </section>
+         <section id="hacker12" data-role="page">
+             
+        </section>
+        
     </body>
    
 </html>
